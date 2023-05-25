@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #D2C0A7;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://www.tendanceouest.com/photos/galeries/346411/9452-tab.jpg);
+  background-size: cover;
+}
+
+.logo img{
+  width: 6rem;
+  border: 1px solid red;
+}
+
+.navbar {
+  position: absolute;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar a {
+  color: #D2C0A7;
+}
+
+.navbar .nav-links ul {
+  display: flex;
+}
+ 
+.navbar .nav-links ul li {
+  margin: 0 25px;
+  list-style: none;
+}
+
+a {  
+  text-decoration: none;  
+  
+}
+
+.navbar .nav-links ul li a:hover {
+  padding: 1.2rem;
+  color: #C51620;
+  border: 5px solid #D2C0A7;
+}
+
+.navbar .nav-links ul li a:active {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.navbar .burger {
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: 50px;
+  width: 35px;
+}
+
+
+@media screen and (max-width: 750px) {
+    .navbar{
+      padding: 0;
+    }
+
+    .navbar .logo{
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+
+    .logo img{
+      width: 5rem;
+      border: 1px solid red;
+    }
+
+    .navbar .burger {
+      display: block;
+    }
+    .nav-links {      
+      background-color: rgba(0, 0, 0, 0.404);
+      backdrop-filter: blur(2px);
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -100%;
+      transition: all 0.5s ease;
+    }
+
+    .nav-links.mobile-menu {
+      margin-left: 0;
+    }
+
+    .nav-links ul {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar .nav-links ul li {
+      padding: 15px 0;
+      font-size: 1.2rem;
+      list-style: none;
+      text-align: center;
+    }
+
+    .navbar .nav-links ul li a:hover {
+      border: solid 1px blue;
+      font-size: 1.5rem;
+      color: #e7dac3;
+      border: none;
+      font-weight: bold;
+    }
+}
+
+/* menu burger 
+
+.navbar .burger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 1;
+}
+
+.navbar .burger span {
+  display: block;
+  height: 3px;
+  width: 25px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #333;
+  border-radius: 3px;
+  z-index: 2;
+  transform-origin: 4px 0px;
+}
+
+.burger.active + .nav-links {
+  display: block;
+}
+
+ ----------- */
+
+#services, #contact, #propos, #presentation {
+  border: 1px solid red;
+}
